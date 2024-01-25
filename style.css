@@ -58,6 +58,9 @@
 .title-mobile {
     font-size: 2rem;
 }
+.title {
+    font-size: 2rem;
+}
 .about-me > .description-mobile {
     line-height: 1.3rem;
     margin: 10px 25px;
@@ -86,6 +89,11 @@
     display: none;
 } */
 /* /////// */
+
+
+    /* ///////// */
+    /* Section-2 */
+    /* ///////// */
 
 .section-2 {
     display: flex;
@@ -167,7 +175,7 @@
 .project-description > .title-mobile {
     font-size: 1.5rem;
 }
-.project-description > .description-mobile {
+.project-description > .description {
     padding: 10px 20px;
 }
 
@@ -191,11 +199,15 @@
     background-color: rgb(8, 144, 176);
 }
 
-.contact > * {
+.contact-left-tablet > * {
     margin: 20px;
 }
 
-.working-image {
+.contact > img {
+    display: none;
+}
+
+.working-image-mobile {
     background-image: url('images/ashley-williams-photo-u4.jpeg');
     background-size: cover;
     background-position: center;
@@ -218,8 +230,16 @@
         display: none;
     }
 
+    .links {
+        display: none;
+    }
+
     .description-tablet {
         display: block;
+    }
+
+    .section-1 {
+        min-height: 60vh;
     }
     
     .about-me {
@@ -284,7 +304,63 @@
         box-shadow: 1px 1px 2px;
     }
 
-    .links {
+    /* ///////// */
+    /* Section-2 */
+    /* ///////// */
+
+    /* .section-2 {
+        display: block;
+    } */
+
+    .section-2 > .title {
+        /* text-align: left; */
+        /* align-self: flex-start; */
+        margin-right: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* font-size: 2rem; */
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project {
+        width: 40vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* ///////// */
+    /* Section-3 */
+    /* ///////// */
+
+    .working-image-mobile {
         display: none;
     }
+
+    .contact > img {
+        display: block;
+    }
+
+    .working-image-tablet {
+        height: 200px;
+        width: 200px;
+        justify-self: center;
+        align-self: center;
+        /* position: relative;
+        left: 50%; */
+        /* float: right; */
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    /* .section-3 {
+        display: ;
+    } */
 }
