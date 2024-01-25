@@ -55,7 +55,7 @@
     /* justify-content: center; */
 }
 
-.title {
+.title-mobile {
     font-size: 2rem;
 }
 .about-me > .description {
@@ -160,7 +160,7 @@
     /* padding-right: 10px; */
 }
 
-.project-description > .title {
+.project-description > .title-mobile {
     font-size: 1.5rem;
 }
 .project-description > .description {
@@ -198,33 +198,21 @@
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
-    /* * {
-        display: none;
-    } */
-
     .image-container {
-        /* border: 1px solid; */
-        /* margin: 30px;
-        padding: 10px;
-        min-height: 300px;
-        min-width: 200px;
-        background-image: url("images/Ashley\ Williams.jpeg");
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        font-size: 3rem;
-        color: black;
-        box-shadow: 1px 1px 5px; */
-        
-        max-width: 40%;
-        align-items: start;
+        /* max-width: 40%; */
+        /* align-items: start; */
+        display: none;
+    }
 
+    .title-mobile {
+        display: none;
     }
     
     .about-me {
         padding-top: 50px;
-        /* display: flex;
-        flex-direction: row; */
+        /* border: thin solid; */
+        margin: 0 60px;
+        position: relative;
     }
 
     .description-container {
@@ -232,21 +220,9 @@
         flex-direction: row;
     }
 
-    .name {
-        /* position: absolute;
-        margin-left: 340px; */
-    }
-
     .description {
-        /* border: thin solid; */
-        /* height: 400px; */
         height: 50vh;
         width: 500px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* font-size: 1.2rem; */
-        /* line-height: 1.2rem; */
-        /* display: flow-root; */
     }
 
     .description > div {
@@ -254,21 +230,35 @@
     }
 
     .description > .name {
-        margin-top: 30px;
+        line-height: 3rem;
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
         font-size: 3rem;
-        /* margin-top: -30px; */
-        /* margin-bottom: 100px; */
     }
     
-    .title {
-        border: thin solid;
-        border-bottom: none;
-        margin-top: 60px;
+    .title-tablet {
+        /* background-color: white; */
+        width: 500px;
+        /* border: thin solid;
+        border-bottom: none; */
+        padding-top: 30px;
+        margin-top: 50px;
+        /* margin-top: 60px; */
+    }
+    
+    .description > .subdescription {
+        background-color: white;
+        width: 550px;
+        padding: 50px 20px 30px 20px;
+        /* padding-top: 50px; */
+        /* border: thin solid;
+        border-top: none; */
+        box-shadow: 1px 0px 5px;
+        text-align: left;
     }
 
-    p {
-        border: thin solid;
-        border-top: none;
+    span.title-tablet {
+        margin-left: 50px;
     }
 
     .container {
@@ -279,47 +269,16 @@
     .description > img {
         margin: 10px;
         margin-top: 100px;
-        /* min-height: 200px; */
-        width: 30%;
-        /* max-width: 200px; */
+        margin-left: 100px;
+        width: 40%;
         object-fit: contain;
         float: left;
-        /* shape-outside: inset(0 0 0 0); */
         transform: scale(2);
         transform-origin: 100% 100%;
-        /* position: relative;
-        right: 100px;
-        bottom: 100px; */
+        box-shadow: 1px 1px 2px;
     }
 
-    /* .description  {
-        width: 300px;
-        height: 300px;
-    } */
-
-    /* .description:before {
-        content:"";
-        float:right;
-        width: 100%;
-        height: 100%;
-        shape-outside: polygon(100% 100%, 100% 0, 0 0);
-        clip-path:     polygon(100% 100%, 100% 0, 0 0);
-      } */
-
-    /* .test {
-        position: relative;
-        top: 50px;
-        left: 50px;
-        background-color: black;
-        height: 100px;
-        width: 400px;
-    } */
-
-    .about-me {
-        border: thin solid;
-        margin: 0 60px;
-        position: relative;
-        /* bottom: 100px; */
+    .links {
+        display: none;
     }
-
 }
